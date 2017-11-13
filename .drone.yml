@@ -2,17 +2,11 @@ pipeline:
   backend:
     image: golang
     commands:
-      - go get
       - go build
       - go test
-
   frontend:
-    image: node:6
+    image: node
     commands:
       - npm install
-      - npm test
-
-  notify:
-    image: plugins/slack
-    channel: developers
-    username: drone
+      - npm run test
+      - npm run build
