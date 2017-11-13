@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# only execute this script as part of the pipeline.
+## only execute this script as part of the pipeline.
 [ -z "$CI" ] && echo "missing ci environment variable" && exit 2
 
 # only execute the script when github token exists.
