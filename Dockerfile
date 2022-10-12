@@ -11,3 +11,4 @@ ENV XDG_CACHE_HOME /var/lib/drone
 ADD release/drone-server /bin/
 
 ENTRYPOINT ["/bin/drone-server"]
+# test comment
